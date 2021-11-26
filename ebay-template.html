@@ -8,34 +8,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ebay template</title>
 <!-- ======= google fonts ======= -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <!-- ======= css ======= -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <style type="text/css">
-/*  ================================
-global area start
-================================ */
 
 body {
-font-size: 18px;
+font-size: 14px;
 font-weight: 400;
 line-height: 1.6;
-font-family: 'Cormorant Garamond', serif;
+font-family: 'Roboto', sans-serif;
 color: #1a1a1a;
 }
 
 *,
 p {
-font-size: 18px;
-font-family: 'Cormorant Garamond', serif;
-}
-
-a,
-a:hover,
-a:focus {
-outline: none;
-text-decoration: none;
+font-size: 14px;
+font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -51,83 +43,22 @@ margin: 0;
 padding: 0;
 line-height: 1.3;
 }
-
 .main-div {
 overflow: hidden;
 }
-
 img {
 max-width: 100%;
 max-height: 100%;
 }
-.logo,
-.footer-logo {
-margin: 0 0 30px;
+.header-area img{
+width: 100%;
 }
-
-/*  ================================
-global area end
-================================ */
-
-/*  ================================
-header area start
-================================ */
-
-.header-wraper {
-overflow: hidden;
-}
-
-/*  ================================
-header area end
-================================ */
-
-/*  ================================
-product title area start
-================================ */
-
-.pro-title {
-background-color: #EC0000;
-border-radius: 5px;
-color: #fff;
-padding: 15px 30px;
-text-align: center;
-margin: 0 0 30px;
-}
-
-.pro-title>h2 {
-font-size: 26px;
-margin: 0;
-font-family: 'Cormorant Garamond', serif;
-font-weight: 700;
-}
-
-/*  ================================
-product title area end
-================================ */
-
-/*  ================================
-product area start
-================================ */
-
-.product-wraper {
-border: 1px solid #D1D1D1;
-overflow: hidden;
-padding: 0 20px 30px;
-}
-
-.gallery-content {
-text-align: center;
-margin-top: 30px;
-}
-
 .product-dec h3 {
 color: #1a1a1a;
-text-transform: capitalize;
-font-size: 26px;
-margin: 30px 0 20px;
+font-size: 18px;
+margin: 0 0 20px;
 font-weight: 700;
 }
-
 .product-dec h4 {
 font-weight: 700;
 color: #1a1a1a;
@@ -135,431 +66,108 @@ font-size: 20px;
 line-height: 1.3;
 margin-bottom: 20px;
 }
-
-.product-dec h5 {
-font-family: 'Cormorant Garamond', serif;
-font-weight: 600;
-color: #1a1a1a;
-font-size: 16px;
-line-height: 1.3;
-margin-bottom: 5px;
-}
-
-.product-dec ul,
-.tab-list ul {
+.product-dec ul {
 margin: 0;
-padding: 0;
+padding: 14px 18px;
+background-color: #F3F3F3;
+border: 1px #ddd solid;
 }
-
-.product-dec ul li,
-.tab-list ul li {
+.product-dec ul li {
 position: relative;
-padding-left: 20px;
-list-style: none;
 margin-bottom: 15px;
 }
-
-.product-dec ul li::before,
-.tab-list ul li::before {
-position: absolute;
-left: 0;
-content: "\f046";
-color: #EC0000;
-font-family: fontawesome;
+.pro-dec2{
+border-left: 1px solid #dddddd;
+padding: 0 20px;
 }
-
-/*  ================================
-product area end
-================================ */
-
-/*  ================================
-tab area start
-================================ */
-
-.tab-part-area {
-padding: 50px 0;
+.pro-dec2 p{
+color: #565959 !important;
+font-size: 12px;
 }
-
-section.tab-section {
-display: none;
-padding: 40px 45px;
-border: 1px solid #ddd;
-color: #1a1a1a;
-overflow: hidden;
-}
-
-input {
-display: none;
-}
-
-label {
-color: #000;
-font-size: 16px;
-font-weight: 600;
-border: 1px solid transparent;
-display: inline-block;
-margin: 0 0 -1px;
-padding: 10px 30px;
-text-align: center;
-text-transform: capitalize;
-background-color: #F8F8FA;
-border: 1px solid #ddd;
-transition: 0.5s;
-}
-
-label:hover {
-cursor: pointer;
-color: #fff;
-border: 1px solid #EC0000;
-background-color: #EC0000;
-}
-
-input:checked+label {
-color: #fff;
-border: 1px solid #EC0000;
-background-color: #EC0000;
-}
-
-#tab1:checked~#content1,
-#tab2:checked~#content2,
-#tab3:checked~#content3,
-#tab4:checked~#content4,
-#tab5:checked~#content5 {
-display: block;
-}
-
-.tab-section p a {
-color: #000;
-font-weight: 600;
-text-decoration: underline;
-}
-
-/*  ================================
-tab area end
-================================ */
-
-/*  ================================
-footer area end
-================================ */
-
-.footer-area p {
-background-color: #EC0000;
-padding: 20px 0;
-}
-
-.footer-area p,
-.footer-area p a {
-font-size: 16px;
-font-weight: 600;
-color: #fff;
-}
-
-.footer-area p a {
-color: #fff;
-}
-
-/*  ================================
-footer area end
-================================ */
-
-/***** medium Layout *****/
-
-@media (min-width: 992px) and (max-width: 1200px) {
-.menu-part {
-padding: 45px 0;
-}
-}
-
-/***** Tablet Layout *****/
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-.logo,
-.menu-part {
-text-align: center;
-}
-
-.menu-part ul li a {
-font-size: 16px;
-}
-
-.menu-part {
-padding: 45px 0 20px;
-}
-}
-
-/***** Mobile Layout *****/
-
 @media only screen and (max-width: 767px) {
-
-*,
-p,
-.footer-area p,
-.footer-area p a {
-font-size: 13px;
-}
-
-.gallery-content {
-height: auto;
-}
-
-.logo {
-text-align: center;
-}
-
-.menu-part {
-text-align: left;
-padding-top: 30px;
-padding-bottom: 0;
-}
-
-.menu-part ul li {
-display: block;
-text-align: left;
-}
-
-.menu-part ul li a {
-font-size: 13px !important;
-padding: 0 0 10px;
-margin: 0;
-border-bottom: 0;
-}
-
-.pro-title>h2 {
-font-size: 16px;
-}
-
-.product-wraper {
-padding: 0 20px 30px;
-}
-
-.product-dec {
+.img-mar{
 margin-top: 30px;
 }
-
-.product-dec h3 {
-font-size: 22px;
 }
-
-.product-dec h4 {
-font-size: 16px;
-}
-
-.des-content {
-padding: 15px;
-}
-
-.des-content h1 {
-font-size: 16px;
-}
-
-.des-content h2 {
-font-size: 16px;
-}
-
-label {
-display: block;
-}
-
-section.tab-section {
-padding: 20px;
-}
-
-.ex {
-margin: 0;
-padding: 0;
-}
-}
-
 </style>
 
 </head>
 
 <body>
 <div class="main-div">
-<!-- ======= header area start ======= -->
 <header class="header-area">
-<div class="header-wraper">
 <div class="container">
 <div class="row">
-<!-- header wraper start -->
 <div class="col-md-12 text-center">
-<!-- logo start -->
-<br>
-<div class="logo">
-<img src="https://hiknik.com/ebay/fiverr-2/CSEbayLogo.jpg" alt="">
+<img src="https://m.media-amazon.com/images/S/aplus-media/sc/4ef86f3e-1e94-41e0-b5bc-bd88ab09e8c5.__CR0,0,970,600_PT0_SX970_V1___.png" alt="">
 </div>
-<!-- logo end -->
-</div>
-</div>
-<!-- header wraper end -->
 </div>
 </div>
 </header>
-<!-- ======= header area end ======= -->
-
-<!-- ======= product title area start ======= -->
-<section class="gallery-area">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="pro-title">
-<h2>
-
-<!-- product title start -->
-
-NOKIA BPM 801 Upper Arm Blood Pressure Monitor Wireless for IOS and Android
-
-<!-- product title end -->
-
-</h2>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ======= product title area end ======= -->
-
-<!-- ======= product images area start ======= -->
 <section class="product-area">
 <div class="container">
 <div class="row">
-<div class="col-md-12">
-<!-- product wraper star -->
-<div class="product-wraper">
-<div class="col-md-6">
-<!-- images gallery part start -->
-<div class="row">
-<div class="col-md-12">
-<div class="gallery-content">
-
-<!--product image start -->
-
-<img src="https://i.ebayimg.com/images/g/oRwAAOSwbPleMZmb/s-l1600.jpg" alt="">
-
-<!--product image end -->
-
+<div class="col-sm-3" style="margin-top: 15px;">
+<img src="https://m.media-amazon.com/images/S/aplus-media/sc/18164679-350a-4628-bcd8-74f87b23feb9.__CR0,0,1774,2365_PT0_SX300_V1___.png" alt="">
 </div>
-</div>
-</div>
-<!-- images gallery part end -->
-</div>
-<div class="col-md-6 ex">
+<div class="col-sm-6" style="margin-top: 15px;">
 <div class="product-dec">
 
 <!-- product discription part start -->
-<h3>Product Description:</h3>
-<p>Take and track your blood pressure and heart rate with the Wireless Blood Pressure Monitor by Nokia. It is easy to operate, highly accurate, and FDA cleared.</p>
-<h3>Features:</h3>
+<h3> - BEOS - Qualitätsklingen für Ihren Mähroboter </h3>
+<p> Unsere hochwertigen Ersatzmesser werden unter höchsten Qualitätsstandards produziert damit Sie sich an einem hervorragenden Schnittbild und langlebigen Klingen bei maximaler Sicherheit erfreuen können. </p>
+<p> Die Messer passen für die Modelle der Marken Worx, LandXcape, Zoef Robot, Einhell, Kress u.v.m. </p>
+<p> Die hochwertigen Klingen werden inkl. 30 Schrauben geliefert die mit Sicherungslack versehen sind. </p>
+<p> Mit unseren Klingen können Sie sich auf einen saftig grünen Rasen und ein optimales Schnittbild freuen. </p>
 <ul>
-<li>FDA cleared - High-accuracy blood pressure monitoring</li>
-<li>Easy - App launches automatically and provides instant color-coded feedback</li>
-<li>Automatic synchronization - Data from every measurement and advice based on internationally-recognized standards automatically appear in the Health Mate app via Bluetooth (iOS and Android)</li>
+<li>- LONGLIFE-Ersatzmesser - Titancarbid-Beschichtung auf rostfreiem Edelstahl für eine lange Nutzungsdauer.</li>
+<li>- SCHRAUBENSICHERUNG - 100% fest auch bei Vibrationen.</li>
+<li>- 2-LOCH-DESIGN - Bis zu 4 mal einsetzbar dank smartem 2-Loch-Design.</li>
 </ul>
 <!-- product discription part end -->
 
 </div>
 </div>
+<div class="col-sm-3" style="margin-top: 15px;">
+<div class="product-dec pro-dec2">
+<div class="text-center">
+<img src="https://m.media-amazon.com/images/S/aplus-media/sc/f1c37190-045f-408e-a767-e52ea1982d25.__CR0,3,350,175_PT0_SX350_V1___.png" alt="">
 </div>
-<!-- product wraper end -->
+<p><b> -BEOS- Werkzeughandel </b></p>
+<p> - BEOS - ist ein kleiner familiengeführter Werkzeughandel aus Freiburg im südlichen Baden-Württemberg. </p>
+<p> Unsere Leidenschaft für Garten und Heimwerken begleitet uns stets bei unserer Arbeit. </p>
+<p> Umso mehr wissen wir, wie wichtig gutes Werkzeug für Haus und Garten ist. Aus diesem Grund haben Qualität und ein guter Service bei uns stets die höchste Priorität. </p>
+<p> Wir kümmern uns um das richtige Werkzeug, damit Sie sich voll und ganz auf Ihren Traumgarten konzentrieren können. </p>
+<!-- product discription part end -->
+
+</div>
 </div>
 </div>
 </div>
 </section>
-<!-- ======= product images area end ======= -->
-
-<div class="tab-part-area">
+<br>
+<div class="more-pro">
 <div class="container">
 <div class="row">
-<div class="col-md-12">
-<div class="tab-area">
-<input id="tab1" name="tabs" checked="" type="radio">
-<label for="tab1">payment</label>
-<input id="tab2" name="tabs" type="radio">
-<label for="tab2">shipping</label>
-<input id="tab3" name="tabs" type="radio">
-<label for="tab3">Returns</label>
-<input id="tab4" name="tabs" type="radio">
-<label for="tab4">contact us</label>
-
-<!-- tab info start -->
-<section id="content1" class="tab-section">
-<div class="col-md-12">
-<div class="tab-list">
-
-<ul>
-<li><b>Accept all major credit cards</b></li>
-</ul>
-<p>Questions: Please message us if you have any questions or concerns.</p>
-
+<div class="col-sm-4">
+<img src="https://m.media-amazon.com/images/S/aplus-media/sc/32a0b430-0139-405c-88b1-8125d7a30f3d.__CR267,273,1614,1614_PT0_SX300_V1___.png" alt="">
+<h4 style="margin: 15px 0 10px;"> Beste Qualität </h4>
+<p> Getreu unserem Motto "Wir kümmern uns um das richtige Werkzeug, damit Sie sich voll und ganz auf Ihren Traumgarten konzentrieren können" setzen wir ausschließlich auf Premiumqualität, die wir selbst getestet haben. </p>
+<p> Die aus rostfreiem Edelstahl gefertigt und mit Titancarbit beschichteten Klingen sorgen für ein langes und sorgenfreies Mähroboter-Vergnügen! </p>
 </div>
+<div class="col-sm-4">
+<img src="https://m.media-amazon.com/images/S/aplus-media/sc/2f8ff362-076a-44df-82bd-172964daa217.__CR12,0,1034,1034_PT0_SX300_V1___.png" alt="" class="img-mar">
+<h4 style="margin: 15px 0 10px;"> Passend für viele Modelle </h4>
+<p> Die passgenauen Ersatzklingen von BEOS können Sie bedenkenlos für die gängigsten Modelle der Premium Hersteller Worx, LandXcape, Zoef Robot, Einhell und Kress verwenden. </p>
 </div>
-</section>
-<!-- tab info end -->
-
-<!-- tab info start -->
-<section id="content2" class="tab-section">
-<div class="col-md-12">
-<div class="tab-list">
-
-<ul>
-<li><b>Fast and free shipping</b></li>
-</ul>
-<p>After we receive payment and we will upload the tracking information and ship day on or next day depending on time of order. </p>
-
-</div>
-</div>
-</section>
-<!-- tab info end -->
-
-<!-- tab info start -->
-<section id="content3" class="tab-section">
-<div class="col-md-12">
-<div class="tab-list">
-<ul>
-<li>30 days money back guarantee</li>
-<li>Buyer pays for return shipping</li>
-</ul>
-<p>We offer a 30 days return/exchange policy for our products. We will refund your purchase if you are dissatisfied for any reason with your product.</p>
-<p>When returning an item, it must be in all of the original packaging and include all of the original accessories or items that came with it. The item and package should be in original and perfect condition. You will be required to cover shipping on the return of defective items.</p>
-</div>
-</div>
-</section>
-<!-- tab info end -->
-
-<!-- tab info start -->
-<section id="content4" class="tab-section">
-<div class="col-md-12">
-<div class="tab-list">
-<p>Please feel free to contact us to discuss anything that you may have a question about.</p>
-<p>Contact us via the eBay messaging system</p>
-</div>
-</div>
-</section>
-<!-- tab info end -->
-
+<div class="col-sm-4">
+<img src="https://m.media-amazon.com/images/S/aplus-media/sc/ec1077de-74ec-49e4-a02c-dac1fc7a0c2c.__CR0,0,1500,1500_PT0_SX300_V1___.png" alt="">
+<h4 style="margin: 15px 0 10px;"> Schraubensicherungslack </h4>
+<p> Zum Fixieren der Präzisionsklingen liefern wir Ihnen 30 Schrauben mit Schraubensicherungslack. Dieser schützt vor vibrationsbedingtem Herausdrehen. </p>
 </div>
 </div>
 </div>
 </div>
-</div>
-
-<!-- ======= footer area star ======= -->
-<footer class="footer-area">
-<div class="container">
-<div class="row">
-<div class="col-md-12 text-center">
-<!-- logo start -->
-<div class="footer-logo">
-<img src="https://hiknik.com/ebay/fiverr-2/CSEbayLogo.jpg" alt="">
-</div>
-<!-- logo end -->
-<p>© Copyright All Rights Reserved</p>
-</div>
-</div>
-</div>
-</footer>
-<!-- ======= footer area end ======= -->
 </div>
 </body>
 
